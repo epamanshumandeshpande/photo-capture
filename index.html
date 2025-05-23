@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Capture Photos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Capture photos</h1>
+    </header>
+    <main>
+        <div class="responsive-grid">
+            <div class="box">
+                <p>Capture Photo</p>
+                <div>
+                    <video id="video" autoplay></video>
+                </div>
+                <button class="btn" id="capture">Capture Photo</button>
+            </div>
+            <div class="box">
+                <p>Upload Photo</p>
+                <div id="photo-preview" class="photo-preview" style="display:none;">
+                    <div class="photo-preview-container">
+                        <canvas id="canvas" width="320" height="240" style="display: none;"></canvas>
+                        <img id="photo" alt="Captured Photo" />
+                    </div>
+                    <div class="photo-preview-actions">
+                        <button class="btn" id="upload">Upload Photo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
+</div>
